@@ -45,27 +45,51 @@ def plim_play(end):
 
 # Press the green button in the gutter to run the script. Above we write the functions/methods and below we call them
 if __name__ == '__main__':
-    print_hi('Ricardo Rosinha')
 
-    # call function calculate rectangle area
-    result = calculate_rectangle_area(3,4)
-    print(f'The rectangle area is {result} m²!')
+    selection = 'C'
 
-    # call function calculate square area
-    result = calculate_square_area(5)
-    print(f'The square area is {result} m²!')
+    while selection.upper() != 'Z':
 
-    # call function calculate triangle area
-    result = calculate_triangle_area(6, 7)
-    print(f'The triangle area is {result} m²!')
+        print('##################################')
+        print('#                                #')
+        print('#    O P T I O N S    M E N U    #')
+        print('#                                #')
+        print('#    1 - Hello World             #')
+        print('#    2 - Rectangle Area          #')
+        print('#    3 - Square Area             #')
+        print('#    4 - Triangle Area           #')
+        print('#    5 - Progressive Counting    #')
+        print('#    6 - Support Candidate       #')
+        print('#    7 - PLIM                    #')
+        print('#                                #')
+        print('#    Z - Exit                    #')
+        print('#                                #')
+        print('##################################')
 
-    # call function progressive counting
-    progressive_counting(11)
+        selection = input('Select your option: ')
+        print(f'You have selected option: {selection}')
 
-    # call function to support candidate
-    support_candidate('Ricardo Rosinha', 100)
-
-    # call PLIM function
-    plim_play(100)
+        if selection.upper() != 'Z':
+            if selection == '1':
+                print_hi('Ricardo Rosinha')
+            elif selection == '2':
+                result = calculate_rectangle_area(8, 9)
+                print(f'The rectangle is {result} m²!')
+            elif selection == '3':
+                result = calculate_square_area(7)
+                print(f'The square is {result} m²!')
+            elif selection == '4':
+                result = calculate_triangle_area(5, 4)
+                print(f'The triangle is {result} m²!')
+            elif selection == '5':
+                progressive_counting(11)
+            elif selection == '6':
+                support_candidate('Ricardo Rosinha', 10)
+            elif selection == '7':
+                plim_play(20)
+            else:
+                print('Invalid option, please select a valid option.')
+        else:
+            print('You have selected to exit. Thank you and return soon')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
