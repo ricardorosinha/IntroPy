@@ -42,7 +42,6 @@ def plim_play(end):
         else:
             print('{:0>4}'.format(number)) # number format
 
-
 # Press the green button in the gutter to run the script. Above we write the functions/methods and below we call them
 if __name__ == '__main__':
 
