@@ -1,0 +1,14 @@
+{
+  "client": [
+    {
+      "name":"Paula",
+      "phone":"352000000000",
+      "email":"paula@mail.com"
+    },
+    {
+      "name":"Ricardo",
+      "phone":"351000000000",
+      "email":"ricardo@mail.com"
+    }
+  ]
+}
